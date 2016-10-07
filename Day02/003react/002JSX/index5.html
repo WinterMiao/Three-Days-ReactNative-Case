@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JSX</title>
+	<script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="example" style="background-color: green;width: 400px; height: 600px">
+	<!-- <h1>老郭</h1>
+	<h1>Yellow 凯</h1>
+	<h1>陈冠希</h1> -->
+</div>
+
+<script type="text/babel">
+	
+	var HelloMessage = React.createClass({
+	    var name = "Hello World";
+	    render: function () {
+            return (
+                    <h1>{name}</h1>
+            )
+        }
+
+    });
+
+	ReactDOM.render(
+		<HelloMessage />,
+		document.getElementById('example')
+	);
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

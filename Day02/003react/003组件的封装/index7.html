@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JSX</title>
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="example" style="background-color: green;width: 400px; height: 600px">
+
+</div>
+
+<script type="text/babel">
+
+    var names = [
+        <h1>育知同创</h1>,
+        <h1>匠心品质</h1>,
+        <h1>良心教育</h1>,
+    ];
+
+    class NodeList extends React.Component {
+
+        render() {
+
+            return (
+                   <ol>
+                       {
+                           names.map(function (name) {
+                               return <li>{name}</li>
+                           })
+                       }
+                   </ol>
+            )
+        }
+    }
+
+
+    ReactDOM.render(
+            <NodeList>
+
+            </NodeList>,
+            document.getElementById('example')
+    );
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+rootProject.name = 'yz_demo'
+
+include ':app'

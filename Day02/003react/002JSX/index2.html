@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JSX</title>
+	<script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="example" style="background-color: green;width: 400px; height: 600px">
+	
+</div>
+
+<script type="text/babel">
+	
+	var names = [
+		<h1>育知同创</h1>,
+		<h1>最帅的老师</h1>,
+		<h1>老罗</h1>
+	];
+
+	ReactDOM.render(
+		<div>
+			{names}
+		</div>,
+		document.getElementById('example')
+	);
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
